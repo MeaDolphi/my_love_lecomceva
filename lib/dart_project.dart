@@ -1,4 +1,4 @@
-import '../src/cmds.dart'
+import '../src/cmds.dart';
 
 import 'package:teledart/teledart.dart';
 import 'package:teledart/telegram.dart';
