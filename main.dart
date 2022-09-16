@@ -8,6 +8,6 @@ void main() async {
 
   teledart.start();
   
-teledart.onMessage(keyword: 'Fight for freedom')
+  teledart.onMessage(keyword: 'Fight for freedom')
     .listen((message) => message.reply('Stand with Hong Kong'));
 }
