@@ -6,5 +6,8 @@ void main() {
   final username = (await Telegram(BOT_TOKEN).getMe()).username;
   var teledart = TeleDart(BOT_TOKEN, Event(username!));
 
-  teledart.start()
+  teledart.start();
+  
+teledart.onMessage(keyword: 'Fight for freedom')
+    .listen((message) => message.reply('Stand with Hong Kong'));
 }
