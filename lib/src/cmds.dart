@@ -1,6 +1,6 @@
 Map<String?, String> _commands = {
   'start': 'Привет, Серёжа!',
-  default: 'Я потеряла твою команду, родной',
+  null: 'Я потеряла твою команду, родной',
 };
 
 class BotCommands {
