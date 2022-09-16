@@ -12,5 +12,5 @@ void main() async {
   teledart.start();
   
   teledart.onCommand('start')
-    .listen((message) => message.reply(botCommands.getText(message.keyword)));
+    .listen((message) => message.reply(botCommands.getText(message.text)));
 }
