@@ -3,7 +3,7 @@ Map<String, String> _commands = {
 };
 
 class BotCommands {
-  String getText(String command) {
-    return _commands[command]!;
+  String? getText(String command) {
+    return _commands[command!];
   }
 }
