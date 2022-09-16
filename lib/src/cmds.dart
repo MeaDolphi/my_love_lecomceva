@@ -4,6 +4,6 @@ Map<String, String> _commands = {
 
 class BotCommands {
   String getText(String command) {
-    return _commands[command];
-  };
+    return _commands[command]!;
+  }
 }
