@@ -5,6 +5,8 @@ Map<String?, String> _commands = {
 
 class BotCommands {
   String getText(String? command) {
+    print('test');
+    print (command);
     return _commands[command];
   }
 }
