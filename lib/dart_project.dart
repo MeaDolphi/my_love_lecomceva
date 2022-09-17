@@ -13,7 +13,7 @@ void main() async {
   
   teledart.onCommand('start')
     .listen((message) {
-      print(message.from);
+      print(message.from?.id);
       
       message.reply(botCommands.getText(message.text));
     });
