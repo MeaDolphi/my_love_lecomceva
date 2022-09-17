@@ -15,7 +15,7 @@ void main() async {
   
   teledart.onMessage(entityType: '*')
     .listen((message) {
-      User? user = message.from;
+      var user = message.from;
       if (user!.id == '5071578911') {
         teledart.close();
       }
