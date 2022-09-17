@@ -14,8 +14,8 @@ void main() async {
   teledart.onMessage()
     .listen((message) {
       print(message.from?.id);
-      
-      if (message.text[0] == '/') {
+      final fChar =
+      if (message.text =! null && message.text[0] == '/') {
         print('Command');
         message.reply(botCommands.getText(message.text));
       }
