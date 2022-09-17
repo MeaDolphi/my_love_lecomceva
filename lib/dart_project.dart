@@ -15,18 +15,19 @@ void main() async {
   
   teledart.onMessage(entityType: '*')
     .listen((message) {
-      var user = message.from;
-      if (user!.id == '5071578911') {
+      
+      
         teledart.close();
       }
     });
   
   teledart.onMessage(entityType: 'bot_command')
     .listen((message) {
-      print(message.from?.id);
-
-      message.reply(botCommands.getText(message.text));
-     
-      print('End');
+      var user = message.from;
+      if (user!.id == '5071578911') {
+        message.reply(botCommands.getText(message.text));
+      }
+      
+      print('command');
     });
 }
