@@ -13,14 +13,6 @@ void main() async {
   
   print('BOT Started');
   
-  teledart.onMessage(entityType: '*')
-    .listen((message) {
-      
-      
-        teledart.close();
-      }
-    });
-  
   teledart.onMessage(entityType: 'bot_command')
     .listen((message) {
       var user = message.from;
