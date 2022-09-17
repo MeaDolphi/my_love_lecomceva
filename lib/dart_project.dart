@@ -15,6 +15,6 @@ void main() async {
     .listen((message) {
       print(message.from);
       
-      return message.reply(botCommands.getText(message.text)));
-    }
+      return message.reply(botCommands.getText(message.text));
+    });
 }
