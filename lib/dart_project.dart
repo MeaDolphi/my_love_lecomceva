@@ -11,14 +11,14 @@ void main() async {
 
   teledart.start();
   
-  teledart.onMessage()
+  print('BOT Started');
+  
+  teledart.onMessage(entityType: 'bot_command')
     .listen((message) {
       print(message.from?.id);
-      
-      if (message.text != null && message.text![0] == '/') {
-        print('Command');
-        message.reply(botCommands.getText(message.text));
-      }
+
+      message.reply(botCommands.getText(message.text));
+     
       print('End');
     });
 }
