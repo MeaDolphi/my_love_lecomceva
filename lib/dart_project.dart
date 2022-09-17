@@ -15,7 +15,7 @@ void main() async {
     .listen((message) {
       print(message.from?.id);
       
-      if (message.text != null && message.text[0] == '/') {
+      if (message.text != null && message.text![0] == '/') {
         print('Command');
         message.reply(botCommands.getText(message.text));
       }
