@@ -6,6 +6,6 @@ Map<String?, String> _commands = {
 class BotCommands {
   String getText(String? command) {
     print (command);
-    return _commands[command]!;
+    return _commands[command ?? command.substring(1)]!;
   }
 }
