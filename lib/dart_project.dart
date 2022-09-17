@@ -11,10 +11,14 @@ void main() async {
 
   teledart.start();
   
-  teledart.onCommand('start')
+  teledart.onMessage()
     .listen((message) {
       print(message.from?.id);
       
-      message.reply(botCommands.getText(message.text));
+      if (message.text[0] == '/') {
+        print('Command');
+        message.reply(botCommands.getText(message.text));
+      }
+      print('End');
     });
 }
