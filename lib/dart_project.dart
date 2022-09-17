@@ -15,9 +15,9 @@ void main() async {
   
   teledart.onMessage(entityType: 'bot_command')
     .listen((message) {
-      var user = message.from;
-      print(user!.id);
-      if (user?.id.toString() == '5071578911') {
+      var user = message.from!;
+      
+      if (user.id.toString() == '5071578911') {
         message.reply(botCommands.getText(message.text));
       }
       
