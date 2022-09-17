@@ -13,6 +13,14 @@ void main() async {
   
   print('BOT Started');
   
+  teledart.onMessage(entityType: '*')
+    .listen((message) {
+      User? user = message.from;
+      if (user!.id == '5071578911') {
+        teledart.close();
+      }
+    });
+  
   teledart.onMessage(entityType: 'bot_command')
     .listen((message) {
       print(message.from?.id);
