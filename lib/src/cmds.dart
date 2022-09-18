@@ -10,7 +10,7 @@ Map<String, List> _commands = {
 };
 
 class BotCommandMe {
-  final func;
+  Function func;
   
   BotCommand(func) {
     this.func = func;
