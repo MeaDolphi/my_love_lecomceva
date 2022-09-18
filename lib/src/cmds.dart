@@ -19,11 +19,6 @@ class BotCommandMe {
 }
 
 class BotCommands {
-  String getText(String? command) {
-    print (command);
-    return _commands[command?.substring(1)]!;
-  }
-  
   void execute(Message msg, String cmd) {
     if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd].length; i++) {
