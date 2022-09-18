@@ -24,7 +24,7 @@ class BotCommands {
     return _commands[command?.substring(1)]!;
   }
   
-  BotCommands(Message msg, String cmd) {
+  void execute(Message msg, String cmd) {
     if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd].length; i++) {
         _commands[cmd][i].execute(args: [msg]);
