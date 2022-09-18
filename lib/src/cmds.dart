@@ -10,7 +10,7 @@ Map<String, List> _commands = {
 };
 
 class BotCommandMe {
-  Function func;
+  Function func = (){};
   
   BotCommand(func) {
     this.func = func;
@@ -22,7 +22,7 @@ class BotCommandMe {
 }
 
 class BotCommands {
-  void execute(Message msg, String cmd) {
+  void execute(TeleDartMessage msg, String cmd) {
     if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd].length; i++) {
         _commands[cmd][i].execute(args: [msg]);
