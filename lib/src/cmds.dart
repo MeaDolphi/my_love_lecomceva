@@ -1,3 +1,6 @@
+import 'package:teledart/teledart.dart';
+import 'package:teledart/telegram.dart';
+
 Map<String, List> _commands = {
   'start': [
     BotCommandMe((args) {
@@ -11,11 +14,11 @@ class BotCommandMe {
   
   BotCommand(func) {
     this.func = func;
-  };
+  }
   
   void execute({List args}) {
     func(args ?? []);
-  };
+  }
 }
 
 class BotCommands {
