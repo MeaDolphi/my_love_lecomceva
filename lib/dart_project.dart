@@ -18,7 +18,7 @@ void main() async {
       var user = message.from!;
       
       if (user.id.toString() == '5071578911') {
-        message.reply(botCommands.getText(message.text));
+        BotCommands.execute(message, message.text);
       }
       
       print('command');
