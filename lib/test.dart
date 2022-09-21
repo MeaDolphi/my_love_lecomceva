@@ -1,3 +1,5 @@
+import ''
+
 List test = [
   12,
   24,
@@ -6,7 +8,7 @@ List test = [
 
 void main() {
   print('Начало кода');
-  for (int i = 0; i < test.lenght; i++) {
+  for (int i = 0; i < test.length; i++) {
     print('Шаг цикла');
     print(test[i]);
   }
