@@ -1,6 +1,14 @@
+List test = [
+  12,
+  24,
+  999,
+];
+
 void main() {
-  for (int i = 0; i < 9; i++) {
-    i++;
-    print (i);
+  print('Начало кода');
+  for (int i = 0; i < test.lenght; i++) {
+    print('Шаг цикла');
+    print(test[i]);
   }
+  print('Конец кода');
 }
