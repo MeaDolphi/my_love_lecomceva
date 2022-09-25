@@ -22,8 +22,8 @@ class BotCommands {
     String cmd = msg.text;
     
     if (_commands[cmd] != null) {
-      for (int i = 0; i < _commands[cmd].length; i++) {
-        _commands[cmd][i].execute();
+      for (int i = 0; i < _commands[cmd]!.length; i++) {
+        _commands[cmd][i]!.execute();
       }
     }
   }
