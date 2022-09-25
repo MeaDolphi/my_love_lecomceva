@@ -29,6 +29,7 @@ class BotCommands {
     
     if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd]!.length; i++) {
+        print(i);
         _commands[cmd]![i].execute([msg]);
       }
     }
