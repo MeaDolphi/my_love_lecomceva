@@ -26,7 +26,5 @@ void main() async {
         
         message.reply('Извини, но я только для моего любимого человека.');
       }
-      
-      print('command');
     });
 }
