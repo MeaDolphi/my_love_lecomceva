@@ -17,6 +17,7 @@ class BotCommand {
   }
   
   void execute(List args) {
+    print ('exexecute');
     func(args);
   }
 }
