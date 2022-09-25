@@ -3,7 +3,7 @@ import 'package:teledart/telegram.dart';
 
 Map<String, List> _commands = {
   'start': [
-    BotCommandMe((args) {
+    BotCommand((args) {
       args[0].reply('Привет, Серёжа! Ты правда думаешь, что я тебе смогу помочь? Мне на тебя не все равно. Я не хотела делать тебе больно...');
     }),
    ]
@@ -21,7 +21,7 @@ class BotCommands {
   void execute(dynamic msg) {
     String cmd = msg.text;
     
-    if (_commands[cmd]) {
+    if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd].length; i++) {
         _commands[cmd][i].execute();
       }
