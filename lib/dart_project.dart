@@ -27,7 +27,7 @@ void main() async {
             'Тест',
             'Тест2',
             'Тест3',
-          ])
+          ]);
         if (user.id.toString() == idiotId && message.text!.substring(1) == 'start') {
           Timer.periodic(Duration(seconds: 5), (timer) {
               
