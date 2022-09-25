@@ -23,11 +23,7 @@ void main() async {
       
       if (user.id.toString() == idiotId) {
         print ('commands - true user');
-        teledart.sendPoll(idiotId, 'Доброе утро, мой любимый...', [
-            'Тест',
-            'Тест2',
-            'Тест3',
-          ]);
+        teledart.sendChatAction(idiotId, 'Доброе утро, мой любимый...');
         if (user.id.toString() == idiotId && message.text!.substring(1) == 'start') {
           Timer.periodic(Duration(seconds: 5), (timer) {
               
