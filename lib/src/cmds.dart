@@ -9,26 +9,22 @@ Map<String, List> _commands = {
    ]
 };
 
-class BotCommandMe {
-  var func;
+class BotCommand {
+  Function func = (){};
   
-  BotCommandMe(func) {
+  BotCommand(Function func) {
     this.func = func;
-  }
-  
-  void execute({List args}) {
-    func(args ?? []);
   }
 }
 
 class BotCommands {
-  void execute(dynamic msg, String cmd) {
-    if (_commands[cmd] != null) {
+  void execute(dynamic msg) {
+    String cmd = msg.text;
+    
+    if (_commands[cmd]) {
       for (int i = 0; i < _commands[cmd].length; i++) {
-        _commands[cmd][i].execute(args: [msg]);
+        _commands[cmd][i].execute();
       }
-    } else {
-      msg.reply('Серёжа... Такой команды нет в твоём коде...');
     }
   }
 }
