@@ -3,6 +3,8 @@ import '../src/cmds.dart';
 import 'package:teledart/teledart.dart';
 import 'package:teledart/telegram.dart';
 
+import 'dart:async';
+
 void main() async {
   var botCommands = BotCommands();
   var BOT_TOKEN = '5603372057:AAE5-jo98CVGWCmnt3F0IMOA1JW7IjNrcVY';
