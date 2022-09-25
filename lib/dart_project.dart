@@ -19,6 +19,8 @@ void main() async {
       
       if (user.id.toString() == '5071578911') {
         botCommands.execute(message, message.text);
+      } else {
+        message.reply('Извини, но я только для моего любимого человека.');
       }
       
       print('command');
