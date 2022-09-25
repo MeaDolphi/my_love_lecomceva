@@ -16,8 +16,8 @@ class BotCommand {
     this.func = func;
   }
   
-  void execute() {
-    func();
+  void execute(List args) {
+    func(args);
   }
 }
 
@@ -27,7 +27,7 @@ class BotCommands {
     
     if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd]!.length; i++) {
-        _commands[cmd]![i].execute();
+        _commands[cmd]![i].execute([msg]);
       }
     }
   }
