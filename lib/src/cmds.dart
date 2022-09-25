@@ -23,7 +23,7 @@ class BotCommands {
     
     if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd]!.length; i++) {
-        _commands[cmd][i]!.execute();
+        _commands[cmd]![i].execute();
       }
     }
   }
