@@ -18,8 +18,12 @@ void main() async {
       var user = message.from!;
       
       if (user.id.toString() == '5071578911') {
+        print ('commands - true user');
+        
         botCommands.execute(message);
       } else {
+        print('commands - false user');
+        
         message.reply('Извини, но я только для моего любимого человека.');
       }
       
