@@ -21,10 +21,10 @@ void main() async {
       
       if (user.id.toString() == '5071578911') {
         print ('commands - true user');
-        
+        teledart.sendMessage('5071578911', 'Это тестовое сообщение');
         if (user.id.toString() == '5071578911' && message.text!.substring(1) == 'start') {
           Timer.periodic(Duration(seconds: 5), (timer) {
-            print(DateTime.now());
+              
           });
         }
         botCommands.execute(message);
