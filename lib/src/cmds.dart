@@ -15,6 +15,10 @@ class BotCommand {
   BotCommand(Function func) {
     this.func = func;
   }
+  
+  void execute() {
+    func();
+  }
 }
 
 class BotCommands {
