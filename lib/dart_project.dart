@@ -20,6 +20,11 @@ void main() async {
       if (user.id.toString() == '5071578911') {
         print ('commands - true user');
         
+        if (user.id.toString() == '5071578911' && message.text.substring(1) == 'start') {
+          Timer.periodic(Duration(seconds: 5), (timer) {
+            print(DataTime.now());
+          });
+        }
         botCommands.execute(message);
       } else {
         print('commands - false user');
