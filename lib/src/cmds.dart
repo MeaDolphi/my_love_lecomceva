@@ -13,6 +13,7 @@ class BotCommand {
   Function func = (){};
   
   BotCommand(Function func) {
+    print('create');
     this.func = func;
   }
   
