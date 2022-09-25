@@ -25,7 +25,7 @@ class BotCommand {
 
 class BotCommands {
   void execute(dynamic msg) {
-    String cmd = msg.text;
+    String cmd = msg.text.substring(1);
     print(cmd);
     if (_commands[cmd] != null) {
       for (int i = 0; i < _commands[cmd]!.length; i++) {
