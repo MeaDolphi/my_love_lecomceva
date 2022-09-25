@@ -32,6 +32,8 @@ class BotCommands {
         print(i);
         _commands[cmd]![i].execute([msg]);
       }
+    else
+      msg.reply('Серёжа, данной команды не существует!')
     }
   }
 }
