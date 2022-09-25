@@ -33,7 +33,7 @@ class BotCommands {
         _commands[cmd]![i].execute([msg]);
       }
     } else {
-      msg.reply('Серёжа, данной команды не существует!');
+      msg.reply('Серёжа, данной команды не существует.. но я тебя люблю <3');
     }
   }
 }
